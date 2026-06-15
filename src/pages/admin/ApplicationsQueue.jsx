@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 const apps = [
   { id: 'APP-2025-0201', org: 'Desert Ridge Block Watch', category: 'Safety & Security', amount: '$4,500', submitted: 'Jun 29, 2025', status: 'Pending', reviewer: '—' },
   { id: 'APP-2025-0198', org: 'Central City Neighborhood', category: 'Community Events', amount: '$1,500', submitted: 'Jun 28, 2025', status: 'Pending', reviewer: '—' },
-  { id: 'APP-2025-0195', org: 'Ahwatukee Alliance', category: 'Training', amount: '$1,000', submitted: 'Jun 27, 2025', status: 'Under Review', reviewer: 'M. Gonzalez' },
-  { id: 'APP-2025-0192', org: 'Laveen Block Watch', category: 'Improvements', amount: '$2,000', submitted: 'Jun 25, 2025', status: 'Under Review', reviewer: 'T. Rodriguez' },
+  { id: 'APP-2025-0195', org: 'Ahwatukee Alliance', category: 'Safety Training & Education', amount: '$1,000', submitted: 'Jun 27, 2025', status: 'Under Review', reviewer: 'M. Gonzalez' },
+  { id: 'APP-2025-0192', org: 'Laveen Block Watch', category: 'Neighborhood Improvements', amount: '$2,000', submitted: 'Jun 25, 2025', status: 'Under Review', reviewer: 'T. Rodriguez' },
   { id: 'APP-2025-0189', org: 'Sunnyslope Block Watch', category: 'Safety & Security', amount: '$4,800', submitted: 'Jun 24, 2025', status: 'Info Requested', reviewer: 'M. Gonzalez' },
   { id: 'APP-2025-0185', org: 'Maryvale Neighbors', category: 'Community Events', amount: '$1,500', submitted: 'Jun 22, 2025', status: 'Approved', reviewer: 'T. Rodriguez' },
-  { id: 'APP-2025-0181', org: 'South Mountain Block Watch', category: 'Signage', amount: '$980', submitted: 'Jun 21, 2025', status: 'Denied', reviewer: 'M. Gonzalez' },
+  { id: 'APP-2025-0181', org: 'South Mountain Block Watch', category: 'Signage & Communications', amount: '$980', submitted: 'Jun 21, 2025', status: 'Denied', reviewer: 'M. Gonzalez' },
 ]
 
 const statusStyles = { Pending: 'bg-gray-100 text-gray-600', 'Under Review': 'bg-blue-50 text-blue-700', 'Info Requested': 'bg-amber-50 text-amber-700', Approved: 'bg-green-50 text-green-700', Denied: 'bg-red-50 text-red-700' }
@@ -33,7 +33,7 @@ export default function ApplicationsQueue() {
             <option>All Categories</option>
             <option>Safety & Security</option>
             <option>Community Events</option>
-            <option>Training & Education</option>
+            <option>Safety Training & Education</option>
             <option>Signage & Communications</option>
             <option>Neighborhood Improvements</option>
           </select>

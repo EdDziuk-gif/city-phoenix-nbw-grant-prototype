@@ -34,7 +34,7 @@ export default function AdminDashboard() {
             {[
               { id: 'APP-2025-0201', org: 'Desert Ridge Block Watch', category: 'Safety & Security', amount: '$4,500', submitted: 'Jun 29' },
               { id: 'APP-2025-0198', org: 'Central City Neighborhood', category: 'Community Events', amount: '$1,500', submitted: 'Jun 28' },
-              { id: 'APP-2025-0195', org: 'Ahwatukee Alliance', category: 'Training & Education', amount: '$1,000', submitted: 'Jun 27' },
+              { id: 'APP-2025-0195', org: 'Ahwatukee Alliance', category: 'Safety Training & Education', amount: '$1,000', submitted: 'Jun 27' },
               { id: 'APP-2025-0192', org: 'Laveen Block Watch', category: 'Neighborhood Improvements', amount: '$2,000', submitted: 'Jun 25' },
             ].map(({ id, org, category, amount, submitted }) => (
               <div key={id} className="px-5 py-3 flex justify-between items-center hover:bg-gray-50">
