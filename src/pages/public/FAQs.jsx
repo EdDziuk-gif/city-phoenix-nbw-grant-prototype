@@ -13,8 +13,8 @@ const faqs = [
   { q: 'What reporting is required after receiving a grant?', a: 'Awarded organizations must submit a completion report within 90 days of the grant period end date, documenting how funds were used.' },
 ]
 
-function FAQItem({ q, a }) {
-  const [open, setOpen] = useState(false)
+function FAQItem({ q, a, defaultOpen = false }) {
+  const [open, setOpen] = useState(defaultOpen)
   return (
     <div className="border border-gray-200 rounded-lg overflow-hidden">
       <button onClick={() => setOpen(!open)} className="w-full text-left px-5 py-4 flex justify-between items-center bg-white hover:bg-gray-50 transition">
@@ -35,7 +35,7 @@ export default function FAQs() {
         <p className="text-gray-500 mt-2 text-lg">Common questions about the NBW Grant Program.</p>
       </div>
       <div className="space-y-3">
-        {faqs.map(({ q, a }) => <FAQItem key={q} q={q} a={a} />)}
+        {faqs.map(({ q, a }, i) => <FAQItem key={q} q={q} a={a} defaultOpen={i < 3} />)}
       </div>
       <div className="mt-10 bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
         <div className="font-semibold text-gray-800 mb-2">Still have questions?</div>
