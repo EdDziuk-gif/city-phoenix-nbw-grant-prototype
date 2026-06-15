@@ -1,0 +1,13 @@
+{
+  "name": "city-phoenix-nbw-grant-prototype",
+  "version": "1.0.0",
+  "description": "Clickable prototype of the redesigned NBW Grant Program website and portal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
