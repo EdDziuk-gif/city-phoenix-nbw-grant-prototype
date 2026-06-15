@@ -12,6 +12,11 @@ const navItems = [
 export default function PortalLayout() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
+      {/* Prototype banner */}
+      <div className="bg-amber-400 text-amber-900 text-xs font-semibold text-center py-1.5 px-4 tracking-wide">
+        CONCEPT PROTOTYPE — For Board Review Only · Not a live system
+      </div>
+
       {/* Top bar */}
       <header className="bg-[#1B4F8A] text-white shadow z-10">
         <div className="px-4 py-3 flex items-center justify-between">

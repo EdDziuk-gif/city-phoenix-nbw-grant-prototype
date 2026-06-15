@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
+import ScrollToTop from './components/ScrollToTop'
+import NotFound from './pages/NotFound'
 import PublicLayout from './layouts/PublicLayout'
 import PortalLayout from './layouts/PortalLayout'
 import AdminLayout from './layouts/AdminLayout'
@@ -41,6 +43,7 @@ import ProgramSettings from './pages/admin/ProgramSettings'
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         {/* Public site */}
         <Route element={<PublicLayout />}>
@@ -83,6 +86,9 @@ export default function App() {
           <Route path="users" element={<UserManagement />} />
           <Route path="settings" element={<ProgramSettings />} />
         </Route>
+
+        {/* 404 */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )

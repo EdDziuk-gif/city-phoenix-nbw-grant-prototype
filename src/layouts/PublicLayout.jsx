@@ -14,10 +14,15 @@ const navLinks = [
 export default function PublicLayout() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+      {/* Prototype banner */}
+      <div className="bg-amber-400 text-amber-900 text-xs font-semibold text-center py-1.5 px-4 tracking-wide">
+        CONCEPT PROTOTYPE — For Board Review Only · Not a live system
+      </div>
+
       {/* Top bar */}
       <div className="bg-blue-900 text-white text-xs py-1.5 px-4 flex justify-between items-center">
         <span>City of Phoenix — Official Website</span>
-        <Link to="/sign-in" className="hover:underline">Staff / Admin Login</Link>
+        <Link to="/sign-in" className="hover:underline">Staff Sign In</Link>
       </div>
 
       {/* Header */}
