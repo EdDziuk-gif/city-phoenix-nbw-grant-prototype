@@ -32,32 +32,32 @@ const KB = [
   {
     words: ['apply', 'application', 'how to', 'submit', 'steps', 'process', 'start'],
     answer:
-      'Applying takes about 20 minutes. Create an account (or sign in), then complete the 5-step application: (1) Organization info, (2) Project description, (3) Budget breakdown, (4) Supporting documents, (5) Review and submit. Once submitted you'll receive a confirmation number immediately. You can save a draft and return at any time before the deadline.',
+      "Applying takes about 20 minutes. Create an account (or sign in), then complete the 5-step application: (1) Organization info, (2) Project description, (3) Budget breakdown, (4) Supporting documents, (5) Review and submit. Once submitted you'll receive a confirmation number immediately. You can save a draft and return at any time before the deadline.",
   },
   {
     words: ['status', 'track', 'check', 'progress', 'where', 'update', 'decision'],
     answer:
-      'Log in to your applicant portal and go to My Applications. You'll see real-time status for each application: Submitted, Under Review, Additional Info Requested, Approved, or Denied. You'll also receive email notifications whenever your status changes — no need to call the office.',
+      "Log in to your applicant portal and go to My Applications. You'll see real-time status for each application: Submitted, Under Review, Additional Info Requested, Approved, or Denied. You'll also receive email notifications whenever your status changes — no need to call the office.",
   },
   {
     words: ['document', 'upload', 'attach', 'files', 'required', 'what do i need'],
     answer:
-      'Required documents vary by category, but typically include: your current Block Watch registration certificate, a project description (1–2 pages), vendor quotes or cost estimates, and a W-9 if your organization hasn't been funded before. Upload them as PDFs in Step 4 of the application. Staff will contact you through the portal if anything is missing.',
+      "Required documents vary by category, but typically include: your current Block Watch registration certificate, a project description (1–2 pages), vendor quotes or cost estimates, and a W-9 if your organization hasn't been funded before. Upload them as PDFs in Step 4 of the application. Staff will contact you through the portal if anything is missing.",
   },
   {
     words: ['contact', 'help', 'human', 'person', 'staff', 'phone', 'email', 'office', 'speak'],
     answer:
-      'The program team is here to help. Reach the Office of Neighborhood Services at nbw-grants@phoenix.gov or (602) 262-7111, Monday–Friday 8 AM–5 PM MST. You can also send a message directly through your applicant portal once you're signed in.',
+      "The program team is here to help. Reach the Office of Neighborhood Services at nbw-grants@phoenix.gov or (602) 262-7111, Monday–Friday 8 AM–5 PM MST. You can also send a message directly through your applicant portal once you're signed in.",
   },
   {
     words: ['completion report', 'report', 'after', 'funded', 'what happens'],
     answer:
-      'After your grant is awarded and funds are disbursed, you'll have 90 days from your project completion date to submit a completion report through the portal. The report includes a project summary, photos, and expense documentation. Overdue reports make your organization ineligible for future cycles.',
+      "After your grant is awarded and funds are disbursed, you'll have 90 days from your project completion date to submit a completion report through the portal. The report includes a project summary, photos, and expense documentation. Overdue reports make your organization ineligible for future cycles.",
   },
   {
     words: ['sign in', 'account', 'login', 'password', 'create account', 'register'],
     answer:
-      'Click "Applicant Sign In" in the top-right corner of any page, then select the "Applicant Sign In" tab. First-time users: click "Create Account" and use your organization's email address. If you've applied before, sign in with your existing credentials. Staff members use the "Staff Sign In" tab.',
+      "Click \"Applicant Sign In\" in the top-right corner of any page, then select the \"Applicant Sign In\" tab. First-time users: click \"Create Account\" and use your organization's email address. If you've applied before, sign in with your existing credentials. Staff members use the \"Staff Sign In\" tab.",
   },
 ]
 
@@ -74,7 +74,7 @@ export default function ChatWidget() {
   const [messages, setMessages] = useState([
     {
       from: 'bot',
-      text: 'Hi! I'm the NBW Grant Assistant. I can answer questions about eligibility, deadlines, grant categories, and how to apply. What would you like to know?',
+      text: "Hi! I'm the NBW Grant Assistant. I can answer questions about eligibility, deadlines, grant categories, and how to apply. What would you like to know?",
     },
   ])
   const [input, setInput] = useState('')
