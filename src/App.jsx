@@ -39,6 +39,8 @@ import FundedProjects from './pages/admin/FundedProjects'
 import Reports from './pages/admin/Reports'
 import UserManagement from './pages/admin/UserManagement'
 import ProgramSettings from './pages/admin/ProgramSettings'
+import BotResponses from './pages/admin/BotResponses'
+import BotTraining from './pages/admin/BotTraining'
 
 export default function App() {
   return (
@@ -85,6 +87,8 @@ export default function App() {
           <Route path="reports" element={<Reports />} />
           <Route path="users" element={<UserManagement />} />
           <Route path="settings" element={<ProgramSettings />} />
+          <Route path="bot-responses" element={<BotResponses />} />
+          <Route path="bot-training" element={<BotTraining />} />
         </Route>
 
         {/* 404 */}

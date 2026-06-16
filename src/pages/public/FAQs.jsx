@@ -37,8 +37,29 @@ export default function FAQs() {
       <div className="space-y-3">
         {faqs.map(({ q, a }, i) => <FAQItem key={q} q={q} a={a} defaultOpen={i < 3} />)}
       </div>
-      <div className="mt-10 bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
-        <div className="font-semibold text-gray-800 mb-2">Still have questions?</div>
+      {/* AI Assistant callout */}
+      <div className="mt-10 bg-[#1B4F8A] rounded-xl p-6 flex flex-col sm:flex-row items-center gap-5 text-white">
+        <div className="text-5xl flex-shrink-0">🤖</div>
+        <div className="flex-1 text-center sm:text-left">
+          <div className="font-bold text-lg mb-1">Ask the Grant Assistant</div>
+          <p className="text-blue-200 text-sm leading-relaxed">
+            Get instant answers to questions about eligibility, deadlines, grant categories, required documents, and more — available anytime. Look for the Grant Assistant button in the bottom-right corner of every page.
+          </p>
+        </div>
+        <button
+          onClick={() => {
+            // Trigger the chat widget open
+            const btn = document.querySelector('[aria-label="Open grant assistant chat"]')
+            if (btn) btn.click()
+          }}
+          className="flex-shrink-0 bg-amber-500 hover:bg-amber-400 text-white font-bold text-sm px-5 py-2.5 rounded-lg transition whitespace-nowrap"
+        >
+          Chat Now
+        </button>
+      </div>
+
+      <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
+        <div className="font-semibold text-gray-800 mb-2">Prefer to speak with someone?</div>
         <p className="text-sm text-gray-600 mb-4">Our program staff are happy to help. Contact us before the deadline.</p>
         <a href="/contact" className="text-[#1B4F8A] text-sm font-semibold hover:underline">Contact the Program Office →</a>
       </div>

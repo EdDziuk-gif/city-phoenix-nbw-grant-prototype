@@ -1,4 +1,5 @@
 import { Outlet, NavLink, Link } from 'react-router-dom'
+import ChatWidget from '../components/ChatWidget'
 
 const navLinks = [
   { to: '/', label: 'Home', end: true },
@@ -78,6 +79,8 @@ export default function PublicLayout() {
       <main className="flex-1">
         <Outlet />
       </main>
+
+      <ChatWidget />
 
       {/* Footer */}
       <footer className="bg-gray-800 text-gray-400 text-sm mt-12">

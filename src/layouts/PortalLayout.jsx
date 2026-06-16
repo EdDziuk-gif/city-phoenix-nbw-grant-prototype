@@ -1,4 +1,5 @@
 import { Outlet, NavLink, Link } from 'react-router-dom'
+import ChatWidget from '../components/ChatWidget'
 
 const navItems = [
   { to: '/portal/dashboard', icon: '⊞', label: 'Dashboard' },
@@ -77,6 +78,8 @@ export default function PortalLayout() {
           <Outlet />
         </main>
       </div>
+
+      <ChatWidget />
     </div>
   )
 }

@@ -14,6 +14,9 @@ const navItems = [
   { to: '/admin/reports', icon: '📊', label: 'Reports' },
   { to: '/admin/users', icon: '👥', label: 'User Management' },
   { to: '/admin/settings', icon: '⚙', label: 'Program Settings' },
+  { divider: true, label: 'AI Assistant' },
+  { to: '/admin/bot-responses', icon: '🤖', label: 'Automated Responses' },
+  { to: '/admin/bot-training', icon: '🧠', label: 'Knowledge Base' },
 ]
 
 export default function AdminLayout() {
