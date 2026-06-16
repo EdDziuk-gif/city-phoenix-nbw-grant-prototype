@@ -58,7 +58,7 @@ const responses = [
     category: 'Documents',
     trigger: 'documents, upload, what do I need, files, attach, required paperwork',
     response:
-      'Required documents typically include: current Block Watch registration certificate, project description (1–2 pages), vendor quotes or cost estimates, and a W-9 if your organization hasn't been funded before. Upload as PDFs in Step 4.',
+      "Required documents typically include: current Block Watch registration certificate, project description (1–2 pages), vendor quotes or cost estimates, and a W-9 if your organization hasn't been funded before. Upload as PDFs in Step 4.",
     usage: 98,
     status: 'active',
   },
